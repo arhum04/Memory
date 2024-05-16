@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<label for="slider">Select a value:</label>
+<input type="range" id="slider" name="slider" min="0" max="100" value="50"
+  style="width: 200px; height: 20px; background-color: lightgray; border: none; border-radius: 10px;"
+>
+
+<script>
+  const slider = document.getElementById("slider");
+  slider.addEventListener("input", (event) => {
+    console.log(`Slider value: ${event.target.value}`);
+  });
+</script>
